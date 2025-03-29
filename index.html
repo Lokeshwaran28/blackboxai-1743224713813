@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <div id="app" class="min-h-screen flex flex-col">
+        <!-- Header will be injected by JavaScript -->
+        <header id="header" class="bg-white shadow-sm"></header>
+
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <div id="content">
+                <!-- Content will be dynamically loaded here -->
+                <div class="text-center py-20">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome</h1>
+                    <p class="text-xl text-gray-600">Loading application...</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-6">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2023 Modern Web App. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="components/header.js"></script>
+</body>
+</html>
